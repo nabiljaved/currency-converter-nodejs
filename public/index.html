@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+
+
+</head>
+<body>
+    <div class="container">
+        <div id="content" class="content-form">
+            <h1 style="margin-top: 20px;">Currency Converter (By : Nabeel Javed)</h1>
+            <form action="#" id="currencyForm">
+                <div class="row">
+                    <div class="six columns">
+                        <div id="error"></div>
+                        <label for="country" id="labelCountry">From Currency:</label>
+                        <select class="u-full-width" id="from">
+                            <option value=''>-- Select --</option>
+                            <option value="AED">AED</option>
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="CAD">CAD</option>
+                            <option value="GBP">GBP</option>
+                            <option value="SAR">SAR</option>
+                            <option value="PKR">PKR</option>
+                            <option value="INR">INR</option>
+                            <option value="CZK">CZK</option>
+                            <option value="AFN">AFN</option>
+                            <option value="AUD">AUD</option>
+                        </select>
+                        <label for="genre">To Currency:</label>
+                        <select class="u-full-width" id="to">
+                                <option value=''>-- Select --</option>
+                                <option value="AED">AED</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="CAD">CAD</option>
+                                <option value="GBP">GBP</option>
+                                <option value="SAR">SAR</option>
+                                <option value="PKR">PKR</option>
+                                <option value="INR">INR</option>
+                                <option value="CZK">CZK</option>
+                                <option value="AFN">AFN</option>
+                                <option value="AUD">AUD</option>
+                        </select>
+                        <label>Amount</label>
+                        <input type="text" id="amount">
+                        <input class="button-primary u-full-width" type="submit" value="Convert">
+                        <div id="currency-result"></div>
+                        
+                    </div>
+
+                    <div class="six columns">
+                        <p style="text-align: center; color: red">You can spend amount in these countries</p>
+                        <div id="result"></div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+    <script src="bundle.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</body>
+</html>
